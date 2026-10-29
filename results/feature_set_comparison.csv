@@ -1,0 +1,5 @@
+feature_set,feature_dimensions,grouped_cv_macro_f1,test_accuracy,test_macro_f1,best_C,best_gamma,test_errors
+silhouette,2542,0.820404,1.000000,1.000000,10.0,0.0001,
+appearance,2333,0.813232,0.956522,0.958042,10.0,scale,Ball_05.png
+shape_texture,4846,0.811231,0.956522,0.958042,10.0,0.0001,Ball_05.png
+full,4861,0.804841,0.956522,0.958042,10.0,0.0001,Ball_05.png

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated models and temporary outputs
+*.joblib
+tmp/
+results_naive/
+
+# Presentations and presentation build files
+*.ppt
+*.pptx
+output/
+.codex-build/
+.codex-finalizer/
+deck_builder.bas
+
+# Separate workflows and duplicate/raw data copies
+nuggets_classification_2026/
+RAW_augment*/
+CLEAN_AUGMENTED_400/CLEAN_AUGMENTED_400/
+
+# Local upload packages
+github_upload_nuggets_classifier*.zip

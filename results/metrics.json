@@ -1,0 +1,178 @@
+{
+  "run": {
+    "random_seed": 20261016,
+    "python": "3.11.9",
+    "scikit_learn": "1.8.0",
+    "command": "nugget_classifier.py --output-dir results"
+  },
+  "data": {
+    "training_images_supplied": 400,
+    "training_images": 295,
+    "training_source_groups": 71,
+    "training_class_counts": {
+      "ball": 82,
+      "bell": 62,
+      "bone": 79,
+      "boots": 72
+    },
+    "test_images": 23,
+    "test_class_counts": {
+      "ball": 6,
+      "bell": 6,
+      "bone": 5,
+      "boots": 6
+    },
+    "feature_dimensions": 2542,
+    "candidate_feature_dimensions": 4861
+  },
+  "source_overlap_audit": {
+    "method": "SIFT ratio test plus RANSAC homography against 94 original sources",
+    "matched_test_images": 23,
+    "matched_source_groups": 23,
+    "excluded_from_training": true,
+    "excluded_training_images": 105,
+    "all_matches_agree_with_filename_labels": true,
+    "minimum_inliers": 64,
+    "minimum_inlier_ratio": 0.8387096774193549
+  },
+  "model_selection": {
+    "cv_method": "5-fold StratifiedGroupKFold by source_file",
+    "scoring": "macro F1",
+    "best_score": 0.8204041684070476,
+    "best_parameters": {
+      "svc__C": 10.0,
+      "svc__gamma": 0.0001
+    },
+    "feature_set": "silhouette"
+  },
+  "cross_validation": {
+    "accuracy": 0.847457627118644,
+    "macro_f1": 0.8432345328717694,
+    "confusion_matrix": [
+      [
+        81,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        44,
+        0,
+        18
+      ],
+      [
+        0,
+        1,
+        66,
+        12
+      ],
+      [
+        0,
+        2,
+        11,
+        59
+      ]
+    ],
+    "source_level_accuracy": 0.8732394366197183,
+    "source_level_macro_f1": 0.8442113442113441,
+    "source_level_confusion_matrix": [
+      [
+        26,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        17,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        12
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    "classification_report": {
+      "Ball": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "Bell": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "Bone": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "Boot": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 23.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 23.0
+      }
+    },
+    "mean_confidence": 0.9262138684976692,
+    "minimum_confidence": 0.6910716870348559,
+    "incorrect_count": 0
+  }
+}

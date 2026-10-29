@@ -1,0 +1,50 @@
+{
+  "class_counts": {
+    "ball": 100,
+    "bell": 100,
+    "bone": 100,
+    "boots": 100
+  },
+  "image_count": 400,
+  "manifest_rows": 400,
+  "original_count": 94,
+  "augmented_count": 306,
+  "invalid_images": [],
+  "non_rgb_images": [],
+  "non_white_corner_count": 0,
+  "originals_changed": [],
+  "dimension_mismatches": [],
+  "exact_duplicate_groups": [],
+  "minimum_augmented_mean_absolute_difference": 11.770021814913159,
+  "maximum_augmented_mean_absolute_difference": 35.726360310928214,
+  "source_usage_range_by_class": {
+    "ball": [
+      2,
+      3
+    ],
+    "bell": [
+      5,
+      6
+    ],
+    "bone": [
+      3,
+      4
+    ],
+    "boots": [
+      3,
+      4
+    ]
+  },
+  "checks": {
+    "four_classes_with_100_images_each": true,
+    "manifest_has_400_rows": true,
+    "94_originals_and_306_augmented": true,
+    "all_images_decode_as_rgb": true,
+    "all_corners_are_white": true,
+    "all_originals_are_byte_identical": true,
+    "all_generated_dimensions_match_sources": true,
+    "no_exact_duplicate_images": true,
+    "all_generated_images_differ_from_sources": true
+  },
+  "passed": true
+}
